@@ -4,13 +4,13 @@ Common issues and solutions for Docker LAMP Stack v2.0.
 
 ## 📑 Table of Contents
 
-- [MySQL Issues](#mysql-issues)
-- [phpMyAdmin Issues](#phpmyadmin-issues)
-- [Permission Issues](#permission-issues)
-- [Port Issues](#port-issues)
-- [Script Issues](#script-issues)
-- [Network Issues](#network-issues)
-- [Performance Issues](#performance-issues)
+- [MySQL Issues](#%EF%B8%8F-mysql-issues)
+- [phpMyAdmin Issues](#-phpmyadmin-issues)
+- [Permission Issues](#-permission-issues)
+- [Port Issues](#-port-issues)
+- [Script Issues](#-script-issues)
+- [Network Issues](#-network-issues)
+- [Performance Issues](#-performance-issues)
 
 ---
 
@@ -125,12 +125,14 @@ mysql -h 127.0.0.1 -P 3306 -u docker -p
 **From PHP Application:**
 ```php
 // Correct host (container name, not localhost!)
-$host = 'lamp-database';  // Format: {PROJECT_NAME}-database
+$host = 'lamp-database';
 $user = 'docker';
 $pass = 'docker';
 $db   = 'docker';
 
-$conn = new mysqli($host, $user, $pass, $db);
+$dsn = "mysql:host=$host;dbname=$db";
+
+$pdo = new PDO($dsn, $user, $pass);
 ```
 
 ---

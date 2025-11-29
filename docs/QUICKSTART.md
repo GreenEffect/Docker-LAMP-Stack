@@ -112,7 +112,7 @@ docker compose up -d
 ### Setup Project 1
 ```bash
 cd ~/projects/project1
-git clone <this-repo> .
+git clone https://github.com/GreenEffect/Docker-LAMP-Stack.git .
 ./init.sh
 # Edit .env: HTTP_PORT=8080, COMPOSE_PROJECT_NAME=project1
 ./lamp.sh start
@@ -121,7 +121,7 @@ git clone <this-repo> .
 ### Setup Project 2
 ```bash
 cd ~/projects/project2
-git clone <this-repo> .
+git clone https://github.com/GreenEffect/Docker-LAMP-Stack.git .
 ./init.sh
 # Edit .env: HTTP_PORT=8081, COMPOSE_PROJECT_NAME=project2
 ./lamp.sh start
