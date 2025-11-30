@@ -1,15 +1,4 @@
-DOCKER_LAMP_VERSION=2.0.0
+DOCKER_LAMP_VERSION=2.0.1
 RELEASE_DATE=2025-11-29
 RELEASE_NAME="Production Ready"
 BUILD=final
-
-# Changelog Summary
-# - Cross-platform support (Linux, macOS, Windows)
-# - Dual access mode (direct ports or reverse proxy)
-# - Multi-project support with isolation
-# - Automatic permission handling (USER_ID/GROUP_ID)
-# - Complete automation scripts (init.sh, lamp.sh, etc.)
-# - Extensive documentation (10+ guides, 3600+ lines)
-# - MySQL troubleshooting tools
-# - Fixed: UID/GID readonly variable issue
-# - Fixed: MySQL data directory initialization

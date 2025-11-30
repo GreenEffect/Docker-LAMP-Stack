@@ -1,5 +1,10 @@
 # Changelog - Docker LAMP Stack
 
+### 2.0.1 - 2025-11-30
+✅ Delete reference to php7*
+✅ Add php 8.4 support
+✅ Update docs & references
+
 ### 2.0.0 - 2025-11-29
 ✅ Cross-platform support (Linux, macOS, Windows)
 ✅ Dual access mode (direct ports or reverse proxy)

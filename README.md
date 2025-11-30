@@ -2,7 +2,7 @@
 
 Modern, cross-platform LAMP development environment with Docker.
 
-![PHP](https://img.shields.io/badge/PHP-7.4%20to%208.3-777BB4?logo=php)
+![PHP](https://img.shields.io/badge/PHP-8.0%20to%208.4-777BB4?logo=php)
 ![MySQL](https://img.shields.io/badge/MySQL-8.0-4479A1?logo=mysql)
 ![MariaDB](https://img.shields.io/badge/MariaDB-10.3--10.6-003545?logo=mariadb)
 ![Apache](https://img.shields.io/badge/Apache-2.4-D22128?logo=apache)
@@ -10,7 +10,7 @@ Modern, cross-platform LAMP development environment with Docker.
 
 ## ✨ Features
 
-- 🚀 **Multiple PHP versions** (8.0, 8.1, 8.2, 8.3)
+- 🚀 **Multiple PHP versions** (8.0, 8.1, 8.2, 8.3, 8.4)
 - 💾 **Multiple databases** (MySQL 8, MariaDB 10.3-10.6)
 - 🔒 **HTTPS/SSL** support with auto-generated certificates
 - 🎯 **Dual access modes**: Direct ports or reverse proxy (Nginx)
@@ -61,7 +61,7 @@ All configuration is done via the `.env` file (created by `init.sh`):
 # Project name (must be unique per project)
 COMPOSE_PROJECT_NAME=lamp
 
-# PHP version (php8, php81, php82, php83)
+# PHP version (php8, php81, php82, php83, php84)
 PHPVERSION=php83
 
 # Database (mysql8, mariadb103-106)
@@ -80,7 +80,7 @@ USE_REVERSE_PROXY=false  # false=ports, true=domains
 
 ```bash
 # Edit .env
-PHPVERSION=php81  # or php8, php81, php82, php83
+PHPVERSION=php81  # or php8, php81, php82, php83, php84
 
 # Rebuild and restart
 docker compose down
@@ -331,7 +331,7 @@ See [CHANGELOG.md](CHANGELOG.md) for full history.
 
 ## 📦 Docker Images Used
 
-- **PHP**: Custom builds from `php:7.4-apache` to `php:8.3-apache`
+- **PHP**: Custom builds from `php:8.0-apache` to `php:8.4-apache`
 - **MySQL**: `mysql:8.0`
 - **MariaDB**: `mariadb:10.3` to `mariadb:10.6`
 - **Nginx**: `nginx:alpine`

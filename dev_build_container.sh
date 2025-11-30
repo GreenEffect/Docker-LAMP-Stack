@@ -10,7 +10,7 @@
 
 dc=$(which docker-compose)
 osversion=$(uname)
-dbarr=(mariadb103 mariadb104 mariadb105 mariadb106 mysql57 mysql8)
+dbarr=(mariadb103 mariadb104 mariadb105 mariadb106 mysql8)
 
 checkdep() {
 
@@ -25,7 +25,7 @@ usage() {
 
 echo "Usage:"
 echo "       -b = build all container variations of specified version"
-echo "            valid values are: php54, php56, php71, php72, php73, php74, php8, php81, php82"
+echo "            valid values are: php8, php81, php82, php83, php84"
 echo -e " \nAttention: !!! SCRIPT REMOVES ALL DATA IN 'data/mysql/*' !!!"
 }
 
@@ -115,17 +115,7 @@ fi
 # php versions due to pdo, therefore we only
 # take the first 5 elements of the database versions arrays
 
-if [ "$buildtarget" == 'php54' ]||[ "$buildtarget" == 'php56' ]||[ "$buildtarget" == 'php71' ]||\
-   [ "$buildtarget" == 'php72' ]||[ "$buildtarget" == 'php73' ] ; then
-        for version in "${dbarr[@]:0:5}"
-        do
-                checkdep
-                prepare
-                buildenvfile "$buildtarget" "$version"
-                build "$buildtarget" "$version"
-                cleanup
-        done
-elif [ "$buildtarget" == 'php74' ]||[ "$buildtarget" == 'php8' ]||[ "$buildtarget" == 'php81' ] || [ "$buildtarget" == 'php82' ] || [ "$buildtarget" == 'php83' ] ; then
+if [ "$buildtarget" == 'php8' ]||[ "$buildtarget" == 'php81' ] || [ "$buildtarget" == 'php82' ] || [ "$buildtarget" == 'php83' ] || [ "$buildtarget" == 'php84' ] ; then
         for version in "${dbarr[@]}"
         do
                 checkdep
