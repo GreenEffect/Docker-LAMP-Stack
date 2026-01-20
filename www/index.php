@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>LAMP STACK</title>
+        <title>LampBox</title>
         <link rel="shortcut icon" href="/assets/images/favicon.svg" type="image/svg+xml">
         <link rel="stylesheet" href="/assets/css/bulma.min.css">
     </head>
@@ -11,8 +11,9 @@
         <section class="hero is-medium is-info is-bold">
             <div class="hero-body">
                 <div class="container has-text-centered">
+                    <img src="/assets/images/LampBox_Logo.png" alt="LampBox Logo" style="max-width: 200px; margin-bottom: 20px;">
                     <h1 class="title">
-                        LAMP STACK
+                        LampBox
                     </h1>
                     <h2 class="subtitle">
                         Local development environment
