@@ -1,3 +1,7 @@
+<div align="center">
+  <img src="docs/LampBox_Logo.png" alt="LampBox Logo" width="200">
+</div>
+
 # 🐳 LampBox v2.0.2
 
 Modern, cross-platform LAMP development environment with Docker.
