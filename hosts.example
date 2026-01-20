@@ -1,4 +1,4 @@
-# Example /etc/hosts entries for Docker LAMP local development
+# Example /etc/hosts entries for LampBox local development
 # 
 # Copy the lines you need to your system's hosts file:
 #   Linux/Mac: /etc/hosts

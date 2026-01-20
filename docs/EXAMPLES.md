@@ -260,7 +260,7 @@ if (isset($_SERVER['HTTP_X_FORWARDED_PROTO']) && $_SERVER['HTTP_X_FORWARDED_PROT
 
 **Use case:** Laravel application
 
-**.env (Docker LAMP):**
+**.env (LampBox):**
 ```bash
 COMPOSE_PROJECT_NAME=laravel
 USER_ID=1000
@@ -304,7 +304,7 @@ DB_PASSWORD=secret
 
 **Use case:** Symfony application
 
-**.env (Docker LAMP):**
+**.env (LampBox):**
 ```bash
 COMPOSE_PROJECT_NAME=symfony
 USER_ID=1000

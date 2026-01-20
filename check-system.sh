@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ==============================================================================
-# Docker LAMP Stack - System Check Script
+# LampBox - System Check Script
 # ==============================================================================
 # Verifies that your system meets all requirements
 # ==============================================================================
@@ -275,7 +275,7 @@ echo -e "Total checks: $check_count"
 if [ $error_count -eq 0 ] && [ $warning_count -eq 0 ]; then
     echo -e "${GREEN}✓ All checks passed!${NC}"
     echo ""
-    echo "Your system is ready to run Docker LAMP stack."
+    echo "Your system is ready to run LampBox."
     echo ""
     echo "Next steps:"
     echo "  1. ./init.sh           # Initialize your environment"

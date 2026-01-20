@@ -1,4 +1,4 @@
-# Makefile for Docker LAMP Stack
+# Makefile for LampBox
 # Alternative to lamp.sh for those who prefer make commands
 
 .PHONY: help init check start stop restart status logs shell mysql rebuild clean ssl info start-proxy
@@ -24,7 +24,7 @@ help: ## Display this help message
 ##@ Setup
 
 init: ## Initialize the project (create .env, directories, etc.)
-	@echo "$(GREEN)Initializing Docker LAMP stack...$(NC)"
+	@echo "$(GREEN)Initializing LampBox...$(NC)"
 	@./init.sh
 
 check: ## Check system requirements
@@ -34,19 +34,19 @@ check: ## Check system requirements
 ##@ Docker Operations
 
 start: ## Start the stack (direct port mode)
-	@echo "$(GREEN)Starting Docker LAMP stack...$(NC)"
+	@echo "$(GREEN)Starting LampBox...$(NC)"
 	@docker compose up -d
 	@echo "$(GREEN)✓ Stack started$(NC)"
 	@echo "$(BLUE)Access your site at: http://localhost:$(HTTP_PORT)$(NC)"
 
 start-proxy: ssl ## Start the stack with reverse proxy (domain mode)
-	@echo "$(GREEN)Starting Docker LAMP stack with reverse proxy...$(NC)"
+	@echo "$(GREEN)Starting LampBox with reverse proxy...$(NC)"
 	@docker compose --profile proxy up -d
 	@echo "$(GREEN)✓ Stack started with reverse proxy$(NC)"
 	@echo "$(BLUE)Access your site at: https://$(PROJECT_DOMAIN)$(NC)"
 
 stop: ## Stop the stack
-	@echo "$(YELLOW)Stopping Docker LAMP stack...$(NC)"
+	@echo "$(YELLOW)Stopping LampBox...$(NC)"
 	@docker compose --profile proxy down
 	@echo "$(GREEN)✓ Stack stopped$(NC)"
 
@@ -72,7 +72,7 @@ mysql: ## Open MySQL shell
 ##@ Maintenance
 
 rebuild: ## Rebuild all containers from scratch
-	@echo "$(YELLOW)Rebuilding Docker LAMP stack...$(NC)"
+	@echo "$(YELLOW)Rebuilding LampBox...$(NC)"
 	@docker compose --profile proxy down
 	@docker compose build --no-cache
 	@echo "$(GREEN)✓ Rebuild complete$(NC)"

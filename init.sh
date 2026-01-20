@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ==============================================================================
-# Docker LAMP Stack - Cross-Platform Initialization Script
+# LampBox - Cross-Platform Initialization Script
 # ==============================================================================
 # Works on: Linux, macOS, Windows (Git Bash/WSL2)
 # ==============================================================================
@@ -308,7 +308,7 @@ show_next_steps() {
 
 # Main execution
 main() {
-    print_header "Docker LAMP Stack - Cross-Platform Initialization"
+    print_header "LampBox - Cross-Platform Initialization"
     echo ""
     
     detect_os

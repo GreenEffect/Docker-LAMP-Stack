@@ -1,4 +1,4 @@
-# Changelog - Docker LAMP Stack
+# Changelog - LampBox
 
 ### 2.0.2 - 2026-01-20
 ✅ Add PHP 8.5 support  

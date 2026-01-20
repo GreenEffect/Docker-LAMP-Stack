@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ==============================================================================
-# SSL Certificate Generator for Docker LAMP Stack
+# SSL Certificate Generator for LampBox
 # ==============================================================================
 # This script generates self-signed SSL certificates for local development
 # 

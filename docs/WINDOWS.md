@@ -1,8 +1,8 @@
-# Windows Setup Guide - Docker LAMP Stack v2.0.2
+# Windows Setup Guide - LampBox v2.0.2
 
 ## 🪟 Guide Spécifique Windows
 
-Ce guide vous aide à configurer et utiliser Docker LAMP Stack v2.0.2 sur Windows.
+Ce guide vous aide à configurer et utiliser LampBox v2.0.2 sur Windows.
 
 ---
 
@@ -139,7 +139,7 @@ docker exec -it lamp-database mysql -u root -p
 ### Emplacement des Fichiers
 
 ```
-C:\Users\VotreNom\docker-lamp\
+C:\Users\VotreNom\LampBox\
 ├── www\              ← Votre code PHP ici
 ├── config\           ← Configurations
 ├── data\mysql\       ← Base de données (ne pas modifier)

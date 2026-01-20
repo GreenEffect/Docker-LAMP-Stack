@@ -1,4 +1,4 @@
-# 🐳 Docker LAMP Stack v2.0.2
+# 🐳 LampBox v2.0.2
 
 Modern, cross-platform LAMP development environment with Docker.
 
@@ -28,7 +28,7 @@ Modern, cross-platform LAMP development environment with Docker.
 
 ```bash
 # 1. Clone or extract the project
-cd Docker-LAMP/
+cd LampBox/
 
 # 2. Initialize (auto-configures everything)
 ./init.sh
@@ -188,7 +188,7 @@ Or use reverse proxy mode with different domains:
 ## 📂 Project Structure
 
 ```
-Docker-LAMP/
+LampBox/
 ├── bin/                      # Dockerfiles for PHP and database versions
 ├── config/
 │   ├── vhosts/              # Apache virtual hosts

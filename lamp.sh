@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # ==============================================================================
-# Docker LAMP Stack - Management Script
+# LampBox - Management Script
 # ==============================================================================
 # Easy commands to start, stop, and manage your LAMP stack
 # ==============================================================================
@@ -34,7 +34,7 @@ check_env() {
 # Show usage
 usage() {
     cat << EOF
-${BLUE}Docker LAMP Stack - Management Script${NC}
+${BLUE}LampBox - Management Script${NC}
 
 Usage: $0 [COMMAND] [OPTIONS]
 
@@ -70,7 +70,7 @@ EOF
 # Start the stack
 start() {
     check_env
-    print_header "Starting Docker LAMP Stack: $COMPOSE_PROJECT_NAME"
+    print_header "Starting LampBox: $COMPOSE_PROJECT_NAME"
     
     if [ "$1" = "--proxy" ] || [ "$1" = "-p" ] || [ "$USE_REVERSE_PROXY" = "true" ]; then
         print_info "Starting with reverse proxy mode..."
@@ -99,7 +99,7 @@ start() {
 # Stop the stack
 stop() {
     check_env
-    print_header "Stopping Docker LAMP Stack: $COMPOSE_PROJECT_NAME"
+    print_header "Stopping LampBox: $COMPOSE_PROJECT_NAME"
     docker compose --profile proxy down
     print_info "✓ Stack stopped"
 }
@@ -158,7 +158,7 @@ mysql_shell() {
 # Rebuild containers
 rebuild() {
     check_env
-    print_header "Rebuilding Docker LAMP Stack"
+    print_header "Rebuilding LampBox"
     print_warning "This will rebuild all containers from scratch"
     read -p "Continue? (y/N): " -n 1 -r
     echo
@@ -176,7 +176,7 @@ rebuild() {
 # Clean everything
 clean() {
     check_env
-    print_header "Cleaning Docker LAMP Stack"
+    print_header "Cleaning LampBox"
     print_warning "This will remove all containers, networks, and volumes!"
     print_warning "Your database data will be LOST unless backed up!"
     read -p "Are you sure? (y/N): " -n 1 -r

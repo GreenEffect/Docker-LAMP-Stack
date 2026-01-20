@@ -1,12 +1,12 @@
 @echo off
 REM ==============================================================================
-REM Docker LAMP Stack - Windows Initialization Script
+REM LampBox - Windows Initialization Script
 REM ==============================================================================
 REM For use without Git Bash - native Windows Command Prompt
 REM ==============================================================================
 
 echo ===================================================================
-echo Docker LAMP Stack - Windows Initialization
+echo LampBox - Windows Initialization
 echo ===================================================================
 echo.
 

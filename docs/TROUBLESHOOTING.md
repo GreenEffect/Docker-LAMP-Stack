@@ -1,6 +1,6 @@
 # 🔧 Troubleshooting Guide
 
-Common issues and solutions for Docker LAMP Stack v2.0.2.
+Common issues and solutions for LampBox v2.0.2.
 
 ## 📑 Table of Contents
 
@@ -394,7 +394,7 @@ rm .env
 
 2. **Use WSL2**
    - Open Ubuntu terminal
-   - Navigate to project: `cd /mnt/c/path/to/Docker-LAMP`
+   - Navigate to project: `cd /mnt/c/path/to/LampBox`
    - Run: `./init.sh`
 
 3. **Use Windows CMD**

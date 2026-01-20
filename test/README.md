@@ -1,6 +1,6 @@
-# Scripts de Test - Docker LAMP Stack
+# Scripts de Test - LampBox
 
-Ce répertoire contient des scripts pour tester différentes configurations PHP et base de données du Docker LAMP Stack.
+Ce répertoire contient des scripts pour tester différentes configurations PHP et base de données de LampBox.
 
 ## 📋 Prérequis
 
@@ -280,7 +280,7 @@ Si un test échoue :
 
 2. **Ouvrir Ubuntu** et naviguer vers le projet :
    ```bash
-   cd /mnt/c/Users/VotreNom/Projets/Docker-LAMP-Stack-v2/test
+   cd /mnt/c/Users/VotreNom/Projets/LampBox/test
    ./test-config.sh php85 mariadb121 9000 9300
    ```
 
